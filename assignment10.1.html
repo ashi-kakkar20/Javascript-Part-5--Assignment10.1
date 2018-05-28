@@ -1,0 +1,30 @@
+<!-- This assignment helps to master the JS classes concept -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 10.1</title>
+</head>
+<body>
+    <script>
+    class rectangle
+    {
+        constructor(length,breadth)// constructor with length & breadth as the properties.
+        {
+            this.length=length;
+            this.breadth=breadth;
+        }
+        
+        get calculateArea() //function to calculate the area of a rectangle
+        {
+            return this.length*this.breadth;
+        }
+
+    }
+    const rect = new rectangle(12, 10);// creating an object of the class rectangle
+    console.log("Area of a rectangle :" + rect.calculateArea);
+    </script>
+</body>
+</html>
